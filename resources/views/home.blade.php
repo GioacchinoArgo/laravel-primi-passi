@@ -6,6 +6,11 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1>Lista insegnanti</h1>
+    <ul>
+        @foreach($teachers as $teacher)
+            <li>{{ $teacher }}</li>
+        @endforeach
+    </ul>
 </body>
 </html>
